@@ -280,7 +280,7 @@ byte SPMon_MAX6675_THCPL_Sensor_Library::SPI_ReadRawFrame()
 {
     byte spi_data_frame = 0;
     for (int8_t i = 7; i >= 0; i--)
-    {
+    {3
         digitalWrite(sclk, LOW);
         delayMicroseconds(50);
         if (digitalRead(miso))
@@ -484,7 +484,7 @@ void setup()
 void loop()
 {
     dsm501a.DSM501A_GetData(&RawValues);
-
+i
     bh1750.BH1750_GetRawData(&RawValues);
     bh1750.BH1750_GetConvData(&RawValues, &ConvertedValues);
 

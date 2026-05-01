@@ -221,4 +221,3 @@ void BLE_ClientMgr::checkCharacterisitc()
     }
 }
 
-
